@@ -2,8 +2,7 @@ import datetime as dt
 from collections.abc import Callable
 from typing import Any
 
-from ppdc_timed_generator.generadores import GeneradorUniforme
-
+from ppdc_timed_generator.generadores.generador_exponencial import GeneradorExponencial
 
 class EstadoDeSimulacion:
     def __init__(
