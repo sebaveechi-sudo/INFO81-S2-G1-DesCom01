@@ -19,12 +19,13 @@ class GeneradorExponencial(Generador):
             if update:
                 self.current_datetime += dt.timedelta(minutes=minutos)
             return []
-
+        
+        #lambda
         lambda_rate = cpm
         
         clientes = []
         minutos_transcurridos = 0.0
-        #bucle
+        #bucle generamos clientes
         while True:
             tiempo_hasta_proximo = self.rdm.expovariate(lambda_rate)
             
