@@ -71,9 +71,9 @@ class Estacion:
         self.id = id
         self.nombre = nombre
         self.poblacion = poblacion
-        self.generador = GeneradorUniforme(
-            poblacion, 123, dt.datetime.now(), hora_inicio, hora_final
-        )
+        self.generador = GeneradorExponencial(
+    poblacion, 123, dt.datetime.now(), hora_inicio, hora_final
+)
         self.clientes: list[Cliente] = []
 
     def generar_demanda(self, minutos: int, update: bool = True):
